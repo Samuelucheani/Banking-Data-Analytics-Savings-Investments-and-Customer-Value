@@ -50,7 +50,7 @@ ORDER BY total_deposits DESC;
 - `GROUP BY`: Necessary to aggregate the number of accounts and total amount for each customer.
 
 #Challenges:
-- My inital query returned no results for customers who had both funded savings and investment accounts.
+- My inital query kept showing me lost connection to MYSQL Server.
 
 - I had to break the logic into two Common Table Expressions (CTEs) (funded_savings and funded_investments) improving clarity and performance.
 

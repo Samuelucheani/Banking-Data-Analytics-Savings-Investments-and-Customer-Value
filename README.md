@@ -1,5 +1,5 @@
 
-#Question 1: Customers with Both Savings and Investments
+#Customers with Both Savings and Investments
 
 #Task: Find customers who have both a funded savings plan and a funded investment plan. We want to see their total deposits to identify high-value clients.
 
@@ -56,7 +56,7 @@ ORDER BY total_deposits DESC;
 
 ---
 
-#Question 2: Transaction Frequency
+#Transaction Frequency
 
 #Task: Segment customers by how often they transact. This helps us identify "frequent users" vs. those who rarely use their accounts.
 
@@ -116,7 +116,7 @@ ORDER BY FIELD(frequency_category, 'High Frequency', 'Medium Frequency', 'Low Fr
 - Needed to enforce custom ordering (High, Medium, Low) using FIELD(),otherwise, SQL would sort alphabetically.
 ---
 
-#Question 3: Inactive Accounts
+#Inactive Accounts
 
 #Task: We want to identify active savings/investment accounts that have not received any deposits in the last 365 days.
 
@@ -167,7 +167,7 @@ HAVING inactivity_days > 365  -- Only show plans with no inflow in over a year
 
 ---
 
-#Question 4: Customer Lifetime Value (CLV)
+#Customer Lifetime Value (CLV)
 
 #Task: Estimate how valuable a customer is, based on how long they have been with us and how much they transact.
 
